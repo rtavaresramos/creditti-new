@@ -19,11 +19,11 @@
     <div >
       <ul ref="toggleControl"  class="toggle-off">
         
-        <a href="#contact">
+        <a href="/">
          <li> Como funciona?
         </li>
         </a>
-        <a href="/blog">
+        <a href="/">
           <li> Seus direitos
          </li>
          </a>
