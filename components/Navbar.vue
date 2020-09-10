@@ -100,7 +100,7 @@ nav {
 
 .logo {
   margin-top: 10px;
-  margin-left: 60px;
+  /* margin-left: 20px; */
 }
 
 .logo img {
@@ -203,6 +203,11 @@ ul a li:hover {
   }
 }
 
+@media screen and (min-width: 830px) {
+    .logo{
+    margin-left: 60px;
+    }
+}
 @media screen and (max-width: 935px) {
   nav {
     display: flex;
