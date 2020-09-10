@@ -8,11 +8,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head:{
+    title: 'Creditti',
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap'
+      }
+    ]
+  }
+}
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap'); */
 body,html,* {
   font-family: 'Raleway', sans-serif;
   padding: 0;
