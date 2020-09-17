@@ -184,11 +184,11 @@
       font-weight: 900;
     }
     .how-it-works-desktop h3{
-      margin: 40px auto;
+      margin: 6px auto;
       font-size: 2.4rem;
       color: #063860;
       font-weight: 700;
-      text-shadow: 2px 2px 0px #508DB7;
+      text-shadow: 3px 2px 0px #508DB7;
     }
 
   }
