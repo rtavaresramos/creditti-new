@@ -190,12 +190,12 @@ ul a li:hover {
   }
 
   to {
-    height: 85vh;
+    height: 55vh;
   }
 }
 @keyframes toggleFadeOut {
   from {
-    height: 85vh;
+    height: 55vh;
   }
 
   to {
@@ -240,7 +240,7 @@ ul a li:hover {
     animation: toggleFadeOut 1s;
   }
   .toggle-on {
-    height: 85vh;
+    height: 55vh;
     animation: toggleFadeIn 1s;
   }
   .toggle--control {

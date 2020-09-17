@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+ <div class="home-page">
+    <div class="first-section">
     <div class="header">
       <h1>Nome sujo</h1>
       <h4>por uma dívida que <strong> não contraiu </strong> ou <strong>já pagou</strong>?</h4>
@@ -18,6 +19,10 @@
       </div>
     </div>
   </div>
+  <div class="how-it-works-mobile">
+      <h3>Como funciona?</h3>
+    </div>
+ </div>
 </template>
 
 <script>
@@ -32,9 +37,8 @@
   padding: 16px 40px!important;
 }
 
-.home{
+.first-section{
   display: flex;
-  justify-content: space-around;
   min-height: 100%;
   min-width: 100%;
   background: #B3DDF4;
@@ -55,6 +59,18 @@
     text-shadow: 7px 3px 0px #508DB7;
     margin-bottom: 20px;
   }
+  .how-it-works-mobile{
+    width: 100%;
+    background:#1572C4;
+  }
+  .how-it-works-mobile h3{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 30px 14px;
+  }
   .header h4{
     font-weight: 400;
     font-size: 1.2rem;
@@ -63,6 +79,7 @@
     background: #186094;
     text-align: center;
     padding: 8px 14px;
+    z-index: 2;
   }
   .header p{
     font-size: 1.1rem;
@@ -71,7 +88,9 @@
     margin: 20px 15px;
   }
   .header img{
-    width: 50%;
+    width: 100%;
+    margin-top: -80px;
+    z-index: 0;
   }
   .aside{
     display: flex;
@@ -105,6 +124,7 @@
     }
   }
   @media screen and (min-width: 830px) {
+
     .header img.mobile-banner{
     display: none;
     }
@@ -136,10 +156,15 @@
       height:  auto;
       width:  100%;
     }
+    .how-it-works-mobile{
+      display: none;
+    }
   }
   @media screen and (max-width: 600px) {
       .header img{
-      width: 70%;
+      width: 100%;
+      margin-bottom: -55px;
     }
+
   }
 </style>
