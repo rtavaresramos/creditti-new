@@ -39,7 +39,10 @@
   font-size: 1.5rem!important;
   padding: 16px 40px!important;
 }
+.home-page{
+  overflow-x: hidden!important;
 
+}
 .first-section{
   display: flex;
   min-height: 100%;

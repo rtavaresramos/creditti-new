@@ -29,12 +29,13 @@ body,html,* {
   margin: 0;
   box-sizing: border-box;
   outline: none;
+  overflow-x: hidden!important;
 }
+
 body{
   display: flex;
   justify-content: center;
   width: 100%;
-  overflow-x: hidden!important;
   font-size: 14px;
   background: #E8EAEB;
 }

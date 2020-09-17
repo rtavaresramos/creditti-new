@@ -6,7 +6,10 @@
                 <p>{{ item.title }}</p>
             </div>
             <div class="content">
-                <p>{{ item.description }}</p>
+                <p>{{ item.description }}
+                    <span v-if="item.restDescription"><a href="#"> aqui </a></span>
+                    {{ item.restDescription }}
+                </p>
             </div>
         </div>
     </div>
@@ -20,7 +23,8 @@
           {
           number: 1,
           title: 'Você nos conta seu caso',
-          description: 'Você nos conta a sua situação aqui, envia os documentos comprovantes e descobrimos se você tem direito a uma indenização.'
+          description: 'Você nos conta a sua situação',
+          restDescription: ', envia os documentos comprovantes e descobrimos se você tem direito a uma indenização.'
         },
           {
           number: 2,
@@ -42,12 +46,15 @@
 h2{
     color: #0072c4;
     font-size: 2.5rem;
-    margin-left: -14px;
-    margin-top: -22px;
-    background:#E8EAEB ;
+    /* margin-top: -22px; */
     height: 45px;
     display: flex;
     align-items: flex-end;
+}
+a{
+    color: #F05000;
+    font-weight: 700;
+    text-decoration: underline;
 }
 .explanation{
     padding: 20px 0;
@@ -55,14 +62,14 @@ h2{
 .item{
     border-left: 6px dotted #0072c4;
     margin: 30px 20px;
+    overflow-x: visible!important;
 }
 .headline p{
     background: #003860;
     color: #fff;
-    margin:  12px;
+    margin: 10px 12px;
     padding: 10px 20px;
     border-radius: 8px;
-    margin-top: -8px;
     font-weight: 800;
 }
 .content{
@@ -71,7 +78,10 @@ h2{
 .headline{
     display: flex;
     align-items: center;
+    margin-left: -14px;
+    background:#E8EAEB ;
     margin-top: -10px;
+    overflow-x: visible!important;
 }
 
 @media screen and (min-width: 830px) {
