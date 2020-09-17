@@ -263,7 +263,7 @@ ul a li:hover {
     margin-top: 50px;
     border-bottom: 3px solid var(--light-color);
     box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.5);
-    background: #AAD2E8;
+    background: #176094;
     
   }
 

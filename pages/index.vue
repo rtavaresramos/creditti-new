@@ -21,13 +21,16 @@
   </div>
   <div class="how-it-works-mobile">
       <h3>Como funciona?</h3>
-    </div>
+  </div>
+  <div>
+   <explanation />
+  </div>
  </div>
 </template>
 
 <script>
   export default {
-    
+   
   }
 </script>
 
@@ -64,7 +67,7 @@
     background:#1572C4;
   }
   .how-it-works-mobile h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: 900;
     margin-bottom: 20px;
