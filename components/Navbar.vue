@@ -225,7 +225,6 @@ ul a li:hover {
 
   .toggle {
     top: 38px;
-    right: -15px;
   }
 
   .toggle .toggle-hamburger__container {

@@ -29,7 +29,7 @@ body,html,* {
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  overflow-x: hidden!important;
+  /* overflow-x: hidden!important; */
 }
 
 body{
