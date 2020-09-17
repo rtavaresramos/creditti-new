@@ -22,6 +22,11 @@
   <div class="how-it-works-mobile">
       <h3>Como funciona?</h3>
   </div>
+  <div class="how-it-works-desktop">
+      <h3>Como funciona?</h3>
+      <h4 class="slogan">Precisa ser simples.</h4>
+      <h4 class="slogan">Precisa ser Creditti!</h4>
+  </div>
   <div>
    <explanation />
   </div>
@@ -68,6 +73,9 @@
   .how-it-works-mobile{
     width: 100%;
     background:#1572C4;
+  }
+  .how-it-works-desktop{
+    display: none;
   }
   .how-it-works-mobile h3{
     font-size: 2rem;
@@ -165,6 +173,24 @@
     .how-it-works-mobile{
       display: none;
     }
+    .how-it-works-desktop{
+      display: block;
+      margin-left: 16%!important;
+      margin: 40px auto;
+    }
+    .how-it-works-desktop h4{
+      font-size: 2.4rem;
+      color: #063860;
+      font-weight: 900;
+    }
+    .how-it-works-desktop h3{
+      margin: 40px auto;
+      font-size: 2.4rem;
+      color: #063860;
+      font-weight: 700;
+      text-shadow: 2px 2px 0px #508DB7;
+    }
+
   }
   @media screen and (max-width: 600px) {
       .header img{
