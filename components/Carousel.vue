@@ -131,52 +131,19 @@ p{
     border-radius: 14px;
     box-shadow: 0 0 10px -5px #000;
   }
-  .item-1::before{
-  position: absolute;
-  content: '';
-  width: 20px;
-  height: 20px;
-  background: #e8eaeb;
-  top: 30px;
-  left: -10px;
-  transform: rotate(45deg);
-  opacity: 1;
-  box-shadow: -4px 4px 10px -7px #000;
-}
+ 
 .item-2{
     padding: 10px 0;
     border-radius: 14px;
     box-shadow: 0 0 10px -5px #000;
 }
-  .item-2::before{
-  position: absolute;
-  content: '';
-  width: 20px;
-  height: 20px;
-  background: #e8eaeb;
-  top: 30px;
-  left: -10px;
-  transform: rotate(45deg);
-  opacity: 1;
-  box-shadow: -4px 4px 10px -7px #000;
-}
+  
 .item-3{
     padding: 10px 0;
     border-radius: 14px;
     box-shadow: 0 0 10px -5px #000;
 }
-  .item-3::before{
-  position: absolute;
-  content: '';
-  width: 20px;
-  height: 20px;
-  background: #e8eaeb;
-  top: 30px;
-  left: -10px;
-  transform: rotate(45deg);
-  opacity: 1;
-  box-shadow: -4px 4px 10px -7px #000;
-}
+ 
 
 *:target ~ .item-1 {
     opacity: 0;
@@ -190,5 +157,44 @@ p{
     z-index: 3;
     opacity: 1;
   }
+  @media screen and (min-width: 830px) {
+ .item-1::before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #e8eaeb;
+  top: 30px;
+  left: -10px;
+  transform: rotate(45deg);
+  opacity: 1;
+  box-shadow: -4px 4px 10px -7px #000;
+}
 
+.item-2::before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #e8eaeb;
+  top: 30px;
+  left: -10px;
+  transform: rotate(45deg);
+  opacity: 1;
+  box-shadow: -4px 4px 10px -7px #000;
+}
+
+.item-3::before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #e8eaeb;
+  top: 30px;
+  left: -10px;
+  transform: rotate(45deg);
+  opacity: 1;
+  box-shadow: -4px 4px 10px -7px #000;
+}
+  }
 </style>
