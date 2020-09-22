@@ -30,8 +30,17 @@
   <div>
    <explanation />
   </div>
-  <div class="d-flex align-start">
-    <div class="headlines">
+  <div class="wpt d-flex align-start flex-wrap">
+    <div class="headlines-mobile d-flex align-center justify-between">
+      <div class="circle">
+      </div>
+     <div class="content">
+        <h3>O que nossos</h3>
+      <h4 class="slogan">clientes dizem?</h4>
+     </div>
+      
+    </div>
+    <div class="headlines ">
       <h3>O que nossos</h3>
       <h4 class="slogan">clientes dizem?</h4>
     </div>
@@ -85,6 +94,50 @@
   .headlines{
     display: none;
   }
+  .circle::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #063860;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+  }
+  .circle::after{
+    content: '';
+    background: transparent;
+    border-left: 6px dotted #1572C4;
+    width: 10px;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: 10px;
+  }
+  .circle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #063860;
+    border-radius: 50%;
+    margin-left: -14px;
+    margin-right: 24px;
+  }
+  .headlines-mobile{
+      margin: 40px 0!important;
+    margin-left: 24px!important;
+    }
+     .headlines-mobile h4{
+      font-size: 2rem;
+      color: #1572C4;
+      font-weight: 900;
+    }
+     .headlines-mobile h3{
+      margin: 6px auto;
+      font-size: 2rem;
+      color: #1572C4;
+      font-weight: 700;
+    }
   .how-it-works-mobile h3{
     font-size: 2rem;
     color: #fff;
@@ -181,6 +234,12 @@
     .how-it-works-mobile{
       display: none;
     }
+    .wpt{
+      margin: 140px auto;
+    }
+     .headlines-mobile{
+       display: none;
+     }
     .headlines{
       display: block;
       margin-left: 16%!important;

@@ -67,9 +67,11 @@ p{
   color: #F05000;
 }
 .carousel-wrapper{
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   position: relative;
-  width: 500px;
+  max-width: 500px;
+  width: 75%;
   margin: 0 auto;
 }
 .carousel-item{
@@ -122,6 +124,7 @@ p{
   }
 
 .item-1 {
+    padding: 10px 0;
     z-index: 2;
     opacity: 1;
     background: fff;
@@ -129,10 +132,12 @@ p{
     box-shadow: 0 0 10px -5px #000;
   }
 .item-2{
+    padding: 10px 0;
     border-radius: 14px;
     box-shadow: 0 0 10px -5px #000;
 }
 .item-3{
+    padding: 10px 0;
     border-radius: 14px;
     box-shadow: 0 0 10px -5px #000;
 }
@@ -149,4 +154,5 @@ p{
     z-index: 3;
     opacity: 1;
   }
+
 </style>

@@ -51,6 +51,9 @@ a{
 .flex-col{
   flex-direction: column;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 .align-center{
   align-items: center;
 }
