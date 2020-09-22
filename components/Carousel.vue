@@ -59,6 +59,7 @@ img{
   margin: 10px auto;
 }
 p{
+  font-weight: 500;
   text-align: center;
   margin: 10px;
 }
