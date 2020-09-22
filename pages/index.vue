@@ -22,13 +22,20 @@
   <div class="how-it-works-mobile">
       <h3>Como funciona?</h3>
   </div>
-  <div class="how-it-works-desktop">
+  <div class="headlines">
       <h3>Como funciona?</h3>
       <h4 class="slogan">Precisa ser simples.</h4>
       <h4 class="slogan">Precisa ser Creditti!</h4>
   </div>
   <div>
    <explanation />
+  </div>
+  <div class="d-flex align-start">
+    <div class="headlines">
+      <h3>O que nossos</h3>
+      <h4 class="slogan">clientes dizem?</h4>
+    </div>
+    <carousel />
   </div>
  </div>
 </template>
@@ -46,6 +53,7 @@
 }
 .home-page{
   overflow-x: hidden!important;
+  padding-bottom: 40px;
 
 }
 .first-section{
@@ -74,7 +82,7 @@
     width: 100%;
     background:#1572C4;
   }
-  .how-it-works-desktop{
+  .headlines{
     display: none;
   }
   .how-it-works-mobile h3{
@@ -173,17 +181,17 @@
     .how-it-works-mobile{
       display: none;
     }
-    .how-it-works-desktop{
+    .headlines{
       display: block;
       margin-left: 16%!important;
       margin: 40px auto;
     }
-    .how-it-works-desktop h4{
+    .headlines h4{
       font-size: 2.4rem;
       color: #063860;
       font-weight: 900;
     }
-    .how-it-works-desktop h3{
+    .headlines h3{
       margin: 6px auto;
       font-size: 2.4rem;
       color: #063860;

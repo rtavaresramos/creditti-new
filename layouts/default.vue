@@ -45,4 +45,25 @@ a{
 .container{
   max-width: 1368px!important;
 }
+.d-flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.align-center{
+  align-items: center;
+}
+.align-start{
+  align-items: flex-start;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-around{
+  justify-content: space-around;
+}
 </style>
