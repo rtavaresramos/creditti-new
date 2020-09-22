@@ -243,7 +243,7 @@
     .headlines{
       display: block;
       margin-left: 16%!important;
-      margin: 40px auto;
+      margin: 0 auto;
     }
     .headlines h4{
       font-size: 2.4rem;
