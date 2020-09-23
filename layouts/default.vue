@@ -69,4 +69,7 @@ a{
 .justify-around{
   justify-content: space-around;
 }
+.mt-5{
+margin-top: 50px;
+}
 </style>
