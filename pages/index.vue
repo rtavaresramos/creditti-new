@@ -62,7 +62,7 @@
       <Button class="button" :text="'Conte seu caso'" :to="'/'" />
   </div>
   <div class="rights">
-    <div class="headlines ">
+    <div class="headlines">
       <h3>Quando uma </h3>
       <h4 class="slogan">negativação é indevida?</h4>
     </div>
@@ -72,14 +72,50 @@
         de devedores, o dano moral sofrido é presumido, ou seja, <strong>você não precisa 
         comprovar que foi prejudicado</strong>. De acordo com a Justiça Brasileira, o simples
         fato de estar com o nome sujo indevidamente, significa que você deve ter seu
-        nome limpo imediatamente e ser indenizado. <strong>A Creditti faz tudo isso 
+        nome limpo imediatamente e ser indenizado. <strong><br>A Creditti faz tudo isso 
         por você!</strong>
       </p>
     </div>
     <Cards />
-    <div class="descomplicando">
+    <div class="descomplicando d-flex justify-between">
       <img src="../assets/img/home-office.png" alt="">
+      <div class="list">
+        <div class="headlines">
+          <h3>Como </h3>
+          <h4 class="slogan">descomplicamos<br> para voce?</h4>
+        </div>
+        <div class="headlines-mobile">
+          <h3>Como </h3>
+          <h4 class="slogan">descomplicamos<br> para voce?</h4>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="rights-mobile">
+    <div class="headlines-mobile">
+      <h3>Quando uma </h3>
+      <h4 class="slogan">negativação é indevida?</h4>
+    </div>
+    <Cards />
+    <div class="content">
+      <p>
+        Quando você é inscrito de forma indevida no Serasa, SPC ou outros cadastros 
+        de devedores, o dano moral sofrido é presumido, ou seja, <strong>você não precisa 
+        comprovar que foi prejudicado</strong>.
+        <br>
+        <br>
+         De acordo com a Justiça Brasileira, o simples
+        fato de estar com o nome sujo indevidamente, significa que você deve ter seu
+        nome limpo imediatamente e ser indenizado. <strong>A Creditti faz tudo isso 
+        por você!</strong>
+      </p>
+    </div>
+  </div>
+    <div class="tell-case-mobile d-flex flex-col text-center justify-around align-center">
+    <div class="title">
+      <h2>Quer começar a limpar o seu nome?</h2>
+    </div>
+      <Button class="button" :text="'Comece agora'" :to="'/'" />
   </div>
  </div>
 </template>
@@ -91,30 +127,32 @@
 </script>
 
 <style lang="css" scoped>
+
 .button{
   font-size: 1.5rem!important;
   padding: 16px 40px!important;
 }
+
 .home-page{
   overflow-x: hidden!important;
-  padding-bottom: 40px;
-
 }
+
 .first-section{
   display: flex;
   min-height: 100%;
   min-width: 100%;
   background: #B3DDF4;
   padding: 30px 6px 36px;
-
 }
+
 .header{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: unset;
+ 
+  }
   
-}
   .header h1{
     font-size: 4rem;
     color: #063860;
@@ -122,13 +160,16 @@
     text-shadow: 7px 3px 0px #508DB7;
     margin-bottom: 20px;
   }
+
   .how-it-works-mobile{
     width: 100%;
     background:#1572C4;
   }
+
   .headlines{
     display: none;
   }
+
   .circle::before{
     content: '';
     width: 30px;
@@ -139,6 +180,7 @@
     z-index: 10;
     overflow-x: hidden;
   }
+
   .circle::after{
     content: '';
     background: transparent;
@@ -150,6 +192,7 @@
     z-index: -1;
     left: 12px;
   }
+
   .circle{
     position: relative;
     width: 30px;
@@ -159,9 +202,10 @@
     margin-left: -16px;
     margin-right: 24px;
   }
+
   .headlines-mobile{
       margin: 40px 0!important;
-    margin-left: 24px!important;
+      margin-left: 24px!important;
     }
      .headlines-mobile h4{
       font-size: 2rem;
@@ -174,6 +218,7 @@
       color: #1572C4;
       font-weight: 700;
     }
+
   .how-it-works-mobile h3{
     font-size: 2rem;
     color: #fff;
@@ -182,6 +227,7 @@
     text-align: center;
     padding: 30px 14px;
   }
+
   .header h4{
     font-weight: 400;
     font-size: 1.2rem;
@@ -192,26 +238,31 @@
     padding: 8px 14px;
     z-index: 2;
   }
+
   .header p{
     font-size: 1.1rem;
     color: #474747;
     font-weight: 600;
     margin: 20px 15px;
   }
+
   .header img{
     width: 100%;
     margin-top: -80px;
     z-index: 0;
   }
+
   .aside{
     display: flex;
   }
+
   .aside h4{
     margin: 20px auto;
     color: #2184CB;
     font-weight: 800;
     font-size: 1.2rem;
   }
+  
   img.brand-banner, svg.brand-banner{
     width: 40%;
   }
@@ -230,9 +281,11 @@
   .mobile-brand{
     margin: 30px auto;
   }
+
   .mobile-brand .brand-banners{
     margin: 10px auto;
   }
+
   .mobile-brand h4{
     margin: 10px;
     text-align: center;
@@ -240,14 +293,53 @@
     font-weight: 800;
     font-size: 1.2rem;
   }
+
    .mobile-brand img.brand-banner,.mobile-brand svg.brand-banner{
     width: 70%;
   }
+
   .tell-case {
     display: none;
   }
-  .rights {
+ 
+  .rights{
     display: none;
+  }
+
+  .rights-mobile {
+    background: #DDE7F7;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .rights-mobile .headlines-mobile{
+    text-align: center;
+  }
+  
+  .rights-mobile .content{
+    font-size: 1.2rem;
+    padding: 40px 20px;
+  }
+  
+  .rights-mobile .content strong{
+    color: #F05000 ;
+  }
+  
+  .tell-case-mobile{
+    padding: 40px 0;
+    color: #fff;
+    background: #063860;
+  }
+  
+  .tell-case-mobile .title{
+    margin: 8px 0;
+    padding: 0 8px;
+    font-size: .8rem;
+    
+  }
+
+  .list{
+    flex: 1;
   }
   @media screen and (max-width: 830px) {
   .aside{
@@ -342,8 +434,9 @@
       padding-top: 50px;
       background-image: url("../assets/img/shadow.png");
       background-repeat: no-repeat;
-      background-size: 2000px;
-      background-position: -850px -650px;
+      background-size: 1500px;
+      background-position: -675px -250px;
+
     }
     .rights p{
       color: #000;
@@ -365,10 +458,18 @@
       width: 80%;
     }
 
+ .rights-mobile {
+    display: none;
+  }
+  .descomplicando{
+    margin-left: -100px!important;
+  }
     .descomplicando img{
       width: 550px;
-      margin-left: 50px;
     }
+     .tell-case-mobile{
+    display: none;
+  }
 
   }
   @media screen and (max-width: 600px) {

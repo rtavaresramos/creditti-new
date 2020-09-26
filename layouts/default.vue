@@ -45,6 +45,9 @@ a{
 .container{
   max-width: 1368px!important;
 }
+.text-center{
+  text-align: center;
+}
 .d-flex{
   display: flex;
 }

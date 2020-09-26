@@ -35,12 +35,47 @@
 </script>
 
 <style lang="css" scoped>
+    
 .card{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 400px;
+    max-width: 400px;
+    width: 80%;
+    min-height: 120px;
+    background: #fff;
+    margin: 20px;
+    padding: 22px 12px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px -5px #000;
+}
+
+h2{
+    color: #F05000;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    top: -32px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.card-place{
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 835px){
+        
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 400px;
+    width: 80%;
     height: 120px;
     background: #fff;
     margin: 20px;
@@ -48,6 +83,7 @@
     border-radius: 14px;
     box-shadow: 0 0 10px -5px #000;
 }
+
 h2{
     color: #F05000;
     font-size: 2rem;
@@ -55,10 +91,14 @@ h2{
     position: absolute;
     top: -18px;
 }
+
 p{
     font-size: 1rem;
 }
+
 .card-place{
     margin-top: 70px;
+}
+
 }
 </style>
