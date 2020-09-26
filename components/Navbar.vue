@@ -100,7 +100,6 @@ nav {
 
 .logo {
   margin-top: 10px;
-  /* margin-left: 20px; */
 }
 
 .logo img {
@@ -132,8 +131,7 @@ ul a li {
 
 ul a li:hover {
  filter: brightness(90%);
-  border-radius: 18px;
-  border:1px solid #fff ;
+ color: #F05000;
 }
 
 .toggle-hamburger__container{

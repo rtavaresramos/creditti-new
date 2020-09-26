@@ -52,22 +52,54 @@
 </template>
 
 <style lang="css" scoped>
+@media screen and (min-width: 830px){
+    img{
+    width: 150px!important;
+    height: 150px!important;
+    margin: 10px auto;
+    }
+
+  p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+    }
+
+  h4{
+    font-size: 1.2rem;
+    }
+
+    .place{
+    font-size: 1.2rem;
+    color: #F05000;
+  }
+}
 
 img{
   width: 100px;
   height: 100px;
   margin: 10px auto;
 }
+
 p{
+    font-size: .9rem;
   font-weight: 500;
   text-align: center;
   margin: 10px;
 }
+
+h4{
+  font-size: 1.1rem;
+}
 .place{
+  font-size: 1.2rem;
   color: #F05000;
+  text-align: center;
 }
 .carousel-wrapper{
   min-height: 400px;
+  padding: 10px 0;
   height: auto;
   position: relative;
   max-width: 500px;

@@ -137,6 +137,7 @@
     border-radius: 50%;
     position: absolute;
     z-index: 10;
+    overflow-x: hidden;
   }
   .circle::after{
     content: '';
@@ -147,7 +148,7 @@
     position: absolute;
     bottom: 0;
     z-index: -1;
-    left: 10px;
+    left: 12px;
   }
   .circle{
     position: relative;
@@ -155,7 +156,7 @@
     height: 30px;
     background: #063860;
     border-radius: 50%;
-    margin-left: -14px;
+    margin-left: -16px;
     margin-right: 24px;
   }
   .headlines-mobile{
@@ -336,7 +337,6 @@
     }
     
     .rights{
-      /* min-height: 1000vh;; */
       display: block;
       padding-left: 100px;
       padding-top: 50px;
