@@ -15,7 +15,13 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap'
-      }
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css',
+        integrity:"sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p",
+        crossorigin:"anonymous"
+      },
     ]
   }
 }
@@ -29,7 +35,7 @@ body,html,* {
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  /* overflow-x: hidden!important; */
+  scroll-behavior: smooth;
 }
 
 body{
@@ -45,8 +51,14 @@ a{
 .container{
   max-width: 1368px!important;
 }
+.text-start{
+  text-align: left;
+}
 .text-center{
   text-align: center;
+}
+.text-end{
+  text-align: right;
 }
 .d-flex{
   display: flex;
@@ -63,6 +75,12 @@ a{
 .align-start{
   align-items: flex-start;
 }
+.align-end{
+  align-items: flex-end;
+}
+.justify-end{
+  justify-content: flex-end;
+}
 .justify-center{
   justify-content: center;
 }
@@ -74,5 +92,14 @@ a{
 }
 .mt-5{
 margin-top: 50px;
+}
+.my-2{
+margin: 8px 0;
+}
+.mx-2{
+margin:0 8px;
+}
+.mx-5{
+margin:0 40px;
 }
 </style>

@@ -79,7 +79,6 @@ a{
 
 .content p{
     font-size: 1.2rem;
-
 }
 .content{
     border-left: 6px dotted #0072c4;

@@ -19,11 +19,19 @@
     <div >
       <ul ref="toggleControl"  class="toggle-off">
         
-        <a href="/">
+        <a href="#how-it-works" class="desktop">
          <li> Como funciona?
         </li>
         </a>
-        <a href="/">
+        <a href="#how-it-works-mobile" class="mobile">
+         <li> Como funciona?
+        </li>
+        </a>
+        <a href="#rights" class="desktop">
+          <li> Seus direitos
+         </li>
+         </a>
+        <a href="#rights-mobile" class="mobile">
           <li> Seus direitos
          </li>
          </a>
@@ -66,6 +74,14 @@ nav {
   text-align: center;
   align-items: center;
 }
+
+.mobile{
+      display: block;
+    }
+
+    .desktop{
+      display: none;
+    }
 
 .toggle {
   z-index: 15;
@@ -158,6 +174,7 @@ ul a li:hover {
   border-radius: 25px;
   transition: 1s ease;
 }
+
 .toggle-hamburger:before{
   content: '';
   position: absolute;
@@ -175,6 +192,7 @@ ul a li:hover {
   top: 45%;
   left: 5%;
 }
+
 #toggle-hamburger-input:checked ~ label .toggle-hamburger:before{
   top: 45%;
   left: 5%;
@@ -182,6 +200,7 @@ ul a li:hover {
 
   transform: rotate(-405deg);
 }
+
 @keyframes toggleFadeIn {
   from {
     height: 0;
@@ -204,6 +223,14 @@ ul a li:hover {
 @media screen and (min-width: 830px) {
     .logo{
     margin-left: 60px;
+    }
+
+    .mobile{
+      display: none;
+    }
+
+    .desktop{
+      display: block;
     }
 }
 @media screen and (max-width: 935px) {

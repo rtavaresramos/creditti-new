@@ -19,10 +19,10 @@
       </div>
     </div>
   </div>
-  <div class="how-it-works-mobile">
+  <div id="how-it-works-mobile" class="how-it-works-mobile">
       <h3>Como funciona?</h3>
   </div>
-  <div class="headlines">
+  <div id="how-it-works" class="headlines">
       <h3>Como funciona?</h3>
       <h4 class="slogan">Precisa ser simples.</h4>
       <h4 class="slogan">Precisa ser Creditti!</h4>
@@ -61,7 +61,7 @@
     </div>
       <Button class="button" :text="'Conte seu caso'" :to="'/'" />
   </div>
-  <div class="rights">
+  <div id="rights" class="rights">
     <div class="headlines">
       <h3>Quando uma </h3>
       <h4 class="slogan">negativação é indevida?</h4>
@@ -77,21 +77,22 @@
       </p>
     </div>
     <Cards />
-    <div class="descomplicando d-flex justify-between">
+    <div class="descomplicando d-flex justify-between flex-wrap">
       <img src="../assets/img/home-office.png" alt="">
       <div class="list">
         <div class="headlines">
           <h3>Como </h3>
           <h4 class="slogan">descomplicamos<br> para voce?</h4>
         </div>
-        <div class="headlines-mobile">
-          <h3>Como </h3>
-          <h4 class="slogan">descomplicamos<br> para voce?</h4>
-        </div>
+       <list />
       </div>
+     <div class="where">
+       <h4>Mas de onde <br> te atendemos?</h4>
+        <img class="from-to" src="../assets/img/from-to.png" alt="">
+     </div>
     </div>
   </div>
-  <div class="rights-mobile">
+  <div id="rights-mobile" class="rights-mobile">
     <div class="headlines-mobile">
       <h3>Quando uma </h3>
       <h4 class="slogan">negativação é indevida?</h4>
@@ -117,17 +118,49 @@
     </div>
       <Button class="button" :text="'Comece agora'" :to="'/'" />
   </div>
+
+  <div class="where-we-are d-flex justify-center text-end">
+    <div class="explain">
+
+      <h4 class="headline-hidden">Mas de onde te atendemos?</h4>
+      <p>
+        Estamos funcionando no <strong>FB Ideias</strong>, o<br> Centro de Empreendedorismo 
+        e <br>Inovação do Grupo Farias Brito, no <strong>Shopping<br> Iguatemi Fortaleza</strong>.
+      </p>
+    </div>
+    <div class="images d-flex flex-col mx-5">
+        <img src="../assets/img/fb-ideias.png" alt="">
+        <div class="contact d-flex my-2 align-center justify-end">
+          <div class="social-media d-flex">
+            <i class="fab fa-instagram fa-3x"></i>
+            <span class="mx-2"></span>
+            <i class="fab fa-facebook-f  fa-3x"></i>
+            <span class="mx-2"></span>
+          </div>
+
+          <div class="mail d-flex flex-col text-start">
+            <a class="my-2" href="mailto:contato@creditti.com.br">contato@creditti.com.br</a>
+            <a href="tel:(85) 9.9802-2720">(85) 9.9802-2720</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <Footer />
  </div>
 </template>
 
-<script>
-  export default {
-   
-  }
-</script>
 
 <style lang="css" scoped>
-
+i{
+  color: #F05000;
+}
+.contact{
+  width: 90%;
+}
+.contact a{
+ color: #0072c4;
+ font-weight: 600;
+}
 .button{
   font-size: 1.5rem!important;
   padding: 16px 40px!important;
@@ -207,12 +240,14 @@
       margin: 40px 0!important;
       margin-left: 24px!important;
     }
-     .headlines-mobile h4{
+
+  .headlines-mobile h4{
       font-size: 2rem;
       color: #1572C4;
       font-weight: 900;
     }
-     .headlines-mobile h3{
+
+  .headlines-mobile h3{
       margin: 6px auto;
       font-size: 2rem;
       color: #1572C4;
@@ -341,6 +376,7 @@
   .list{
     flex: 1;
   }
+
   @media screen and (max-width: 830px) {
   .aside{
       display: none;
@@ -348,8 +384,13 @@
       .header h1{
     text-align: center;
     }
+
+
   }
   @media screen and (min-width: 830px) {
+    h4.headline-hidden{
+      display: none!important;
+    }
 
     .header img.mobile-banner{
     display: none;
@@ -464,13 +505,56 @@
   .descomplicando{
     margin-left: -100px!important;
   }
-    .descomplicando img{
-      width: 550px;
-    }
-     .tell-case-mobile{
-    display: none;
+
+  .descomplicando img{
+    width: 550px;
+    height: 550px;
+  }
+  .where{
+    position: relative;
+    width: 40%;
+    height: 190px;
+    margin-left: 40px;
   }
 
+  .where h4{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    font-size: 1.4rem;
+    text-align: right;
+    color: #0072c4;
+    margin: 20px 0;
+  }
+
+  img.from-to{
+    width: 350px;
+    height: 300px;
+    transform: translate(195px, -113px);
+  }
+  
+  .tell-case-mobile{
+  display: none;
+  }
+  
+  .where-we-are{
+    padding: 0 20px;
+    margin: 20px 0;
+  }
+
+  .explain{
+    max-width: 300px;
+    width: 90%;
+  }
+  .explain strong{
+    color: #F05000;
+  }
+  .images img{
+    max-width: 900px;
+    width: 90%;
+    border: 14px solid #fff;
+    border-radius: 14px;
+  }
   }
   @media screen and (max-width: 600px) {
       .header img{
@@ -478,5 +562,27 @@
       margin-bottom: -55px;
     }
 
+  }
+  @media screen and (max-width: 993px) {
+     .descomplicando{
+       flex-direction: column;
+     }
+
+     .rights .headlines{
+       margin: 0 auto !important;
+       padding: 0 10% 5%;
+     }
+
+    h4.headline-hidden{
+      font-size: 1.4rem;
+      text-align: right;
+      color: #0072c4;
+      margin: 20px 0;
+      display: block!important;
+    }
+
+    .where{
+      display: none;
+    }
   }
 </style>
