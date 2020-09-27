@@ -5,10 +5,10 @@
       <h1>Nome sujo</h1>
       <h4>por uma dívida que <strong> não contraiu </strong> ou <strong>já pagou</strong>?</h4>
       <img class="mobile-banner" src="../assets/img/banner-header.png" alt="Mobile banner" >
-      <p>Conte sua situação em menos de 5 minutos. Começamos a limpar seu nome
-        e buscar sua idenização em até 24h!
+      <p>Conte sua situação e em <strong>3 minutos</strong> nós fazemos seu diagnóstico gratuito. Começamos a 
+        limpar seu nome e a buscar sua indenização <strong>ainda hoje, sem cobrar nada!</strong>
       </p>
-      <Button class="button" :text="'Comece agora'" :to="'/'" />
+      <Button class="button" :text="'Comece agora'" />
     </div>
     <div class="aside">
       <img class="aside-banner" src="../assets/img/aside-banner.png" alt="Desktop banner" >
@@ -59,7 +59,7 @@
     <div class="title">
       <h2>Quer começar a limpar o seu nome?</h2>
     </div>
-      <Button class="button" :text="'Conte seu caso'" :to="'/'" />
+      <Button class="button" :text="'Conte seu caso'" />
   </div>
   <div id="rights" class="rights">
     <div class="headlines">
@@ -116,25 +116,31 @@
     <div class="title">
       <h2>Quer começar a limpar o seu nome?</h2>
     </div>
-      <Button class="button" :text="'Comece agora'" :to="'/'" />
+      <Button class="button" :text="'Comece agora'" />
   </div>
 
   <div class="where-we-are d-flex justify-center text-end">
     <div class="explain">
-
-      <h4 class="headline-hidden">Mas de onde te atendemos?</h4>
+      <div class="headline-hidden d-flex align-center">
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <h4>E de onde<br> <strong>te atendemos?</strong></h4>
+      </div>
       <p>
         Estamos funcionando no <strong>FB Ideias</strong>, o<br> Centro de Empreendedorismo 
-        e <br>Inovação do Grupo Farias Brito, no <strong>Shopping<br> Iguatemi Fortaleza</strong>.
+        e <br>Inovação do Grupo Farias Brito,<br> no <strong>Shopping Iguatemi</strong>.
       </p>
+
+      <div class="images-mobile">
+        <WhereCarousel />
+      </div>
     </div>
     <div class="images d-flex flex-col mx-5">
         <img src="../assets/img/fb-ideias.png" alt="">
-        <div class="contact d-flex my-2 align-center justify-end">
+        <div class="contact d-flex my-3 align-center justify-end">
           <div class="social-media d-flex">
-            <i class="fab fa-instagram fa-3x"></i>
+           <a href="#"> <i class="fab fa-instagram fa-3x"></i></a>
             <span class="mx-2"></span>
-            <i class="fab fa-facebook-f  fa-3x"></i>
+            <a href="#"><i class="fab fa-facebook-f  fa-3x"></i></a>
             <span class="mx-2"></span>
           </div>
 
@@ -154,13 +160,20 @@
 i{
   color: #F05000;
 }
+
+.images{
+  display: none;
+}
+
 .contact{
   width: 90%;
 }
+
 .contact a{
  color: #0072c4;
  font-weight: 600;
 }
+
 .button{
   font-size: 1.5rem!important;
   padding: 16px 40px!important;
@@ -183,7 +196,6 @@ i{
   flex-direction: column;
   align-items: center;
   text-align: unset;
- 
   }
   
   .header h1{
@@ -388,9 +400,13 @@ i{
 
   }
   @media screen and (min-width: 830px) {
-    h4.headline-hidden{
+    .headline-hidden{
       display: none!important;
     }
+
+    .images{
+    display: flex;
+  }
 
     .header img.mobile-banner{
     display: none;
@@ -546,7 +562,7 @@ i{
     max-width: 300px;
     width: 90%;
   }
-  .explain strong{
+  .explain p strong{
     color: #F05000;
   }
   .images img{
@@ -573,14 +589,36 @@ i{
        padding: 0 10% 5%;
      }
 
-    h4.headline-hidden{
-      font-size: 1.4rem;
-      text-align: right;
-      color: #0072c4;
-      margin: 20px 0;
-      display: block!important;
+    .headline-hidden i{ 
+      color: #fff;
+      margin: 0 20px;
     }
-
+    .headline-hidden{
+      width: 100vw;
+      padding: 20px;
+      font-size: 1.4rem;
+      text-align: left;
+      color: #fff;
+      background: #0072c4;
+      margin: 20px 0;
+      display: flex!important;
+      justify-content: center;
+    }
+    
+    .explain{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .explain p{
+      text-align: center;
+      margin: 30px 0;
+    }
+    
+    .explain p strong{
+      color: #F05000;
+    }
     .where{
       display: none;
     }

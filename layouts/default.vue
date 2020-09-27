@@ -93,8 +93,14 @@ a{
 .mt-5{
 margin-top: 50px;
 }
+.mt-3{
+margin: 12px 0 0;
+}
 .my-2{
 margin: 8px 0;
+}
+.my-3{
+margin: 12px 0;
 }
 .mx-2{
 margin:0 8px;

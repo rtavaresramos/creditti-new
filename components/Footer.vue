@@ -10,6 +10,7 @@
         <div class="contact">
             <h3>Fortaleza CE | Creditti, CNPJ: 36.648.875/0001-41</h3>
         </div>
+        <div class="copy mt-3" style="text-align: center;"><cite>Developed by <a href="https://github.com/rtavaresramos">Rodrigo Tavares Ramos</a> © 2020-2020</cite></div>
     </div>
 </template>
 
@@ -18,8 +19,20 @@
     width: 150px;
 }
 
-h3{
+h3, a{
     color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.copy {
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+}
+
+.copy a{
+    text-decoration: underline;
 }
 
 .footer{

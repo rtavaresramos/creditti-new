@@ -1,8 +1,8 @@
 <template>
     <div class="button">
-       <nuxt-link :to="to">
+       <a :href="to" target="_blank">
             {{text}}
-       </nuxt-link>
+       </a>
     </div>
 </template>
 
@@ -15,7 +15,8 @@
             },
             to: {
                 type: String,
-                required: true
+                required: true,
+                default: 'https://creditti.com.br/ajuda'
             },
         },
         
