@@ -4,19 +4,31 @@
         <span id="photo-2"></span>
         <span id="photo-3"></span>
         <div class="carousel-photo photo-1 d-flex flex-col align-center justify-center">
-
+            <div class="circles d-flex justify-center">
+                <div class="circle active"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
             <a class="arrow arrow-prev" href="#photo-3"></a>
             <a class="arrow arrow-next" href="#photo-2"></a>
         </div>
         
         <div class="carousel-photo photo-2 d-flex flex-col align-center justify-center">
-
-           <a class="arrow arrow-prev" href="#photo-1"></a>
+            <div class="circles d-flex justify-center">
+                <div class="circle"></div>
+                <div class="circle active"></div>
+                <div class="circle"></div>
+            </div>
+            <a class="arrow arrow-prev" href="#photo-1"></a>
             <a class="arrow arrow-next" href="#photo-3"></a>
         </div>
         
         <div class="carousel-photo photo-3 d-flex flex-col align-center justify-center">
-
+            <div class="circles d-flex justify-center">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle active"></div>
+            </div>
               
             <a class="arrow arrow-prev" href="#photo-2"></a>
             <a class="arrow arrow-next" href="#photo-1"></a>
@@ -30,6 +42,23 @@
         display: none;
     }
 }
+.circles{
+    height: 100%;
+    align-items: flex-end;
+}
+
+.circle{
+    position: relative;
+    min-width: 10px;
+    height: 10px;
+    background: #F05000;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+
+.circle.active{
+    background: #fff;
+  }
 
 .carousel-wrapper{
   min-height: 330px;

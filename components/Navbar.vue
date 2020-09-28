@@ -37,7 +37,7 @@
          </a>
 
           <li class="bigger"> 
-            <Button :text='"Conte seu caso"' :to="'/'"/>
+            <Button :text='"Conte seu caso"' />
           </li>
 
       </ul>

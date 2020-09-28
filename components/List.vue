@@ -25,7 +25,7 @@
                     },
                     {
                         title: 'Totalmente Online',
-                        content: 'Todo o serviço e atendimento serão feitos pela internet. Se problema será resolvido evitando burocracias ao máximo, não se preocupe!',
+                        content: 'Todo o serviço e atendimento serão feitos pela internet. Seu problema será resolvido evitando burocracias ao máximo, não se preocupe!',
                     },
                     {
                         title: 'Simples e rápido',

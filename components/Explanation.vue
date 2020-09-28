@@ -7,7 +7,7 @@
             </div>
             <div class="content" :class="{'active': item.isActive}" :id="`active-${item.number}`">
                 <p>{{ item.description }}
-                    <span v-if="item.restDescription"><a href="#"> aqui </a></span>
+                    <span v-if="item.restDescription"><a target="_blank" href="https://creditti.com.br/ajuda"> aqui </a></span>
                     {{ item.restDescription }}
                 </p>
             </div>

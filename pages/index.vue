@@ -96,7 +96,7 @@
        <list />
       </div>
      <div class="where">
-       <h4>Mas de onde <br> te atendemos?</h4>
+       <h4 class="where-title">Mas de onde <br> te atendemos?</h4>
         <img class="from-to" src="../assets/img/from-to.png" alt="">
      </div>
     </div>
@@ -128,6 +128,14 @@
       <Button class="button" :text="'Comece agora'" />
   </div>
 
+  <div class="descomplicando-mobile">
+    <div class="headlines-mobile">
+      <h3>Como </h3>
+      <h4 class="slogan">descomplicamos <br> para você?</h4>
+    </div>
+    <DescomplicCarousel />
+  </div>
+
   <div class="where-we-are d-flex justify-center text-end">
     <div class="explain">
       <div class="headline-hidden d-flex align-center">
@@ -147,15 +155,16 @@
         <img src="../assets/img/fb-ideias.png" alt="">
         <div class="contact d-flex my-3 align-center justify-end">
           <div class="social-media d-flex">
-           <a href="#"> <i class="fab fa-instagram fa-3x"></i></a>
+           <a href="https://www.instagram.com/creditti/"> <i class="fab fa-instagram fa-3x"></i></a>
             <span class="mx-2"></span>
-            <a href="#"><i class="fab fa-facebook-f  fa-3x"></i></a>
+            <a href="https://www.facebook.com/creditti"><i class="fab fa-facebook-f  fa-3x"></i></a>
             <span class="mx-2"></span>
           </div>
 
           <div class="mail d-flex flex-col text-start">
             <a class="my-2" href="mailto:contato@creditti.com.br">contato@creditti.com.br</a>
-            <a href="tel:(85) 9.9802-2720">(85) 9.9802-2720</a>
+            <a href="https://api.whatsapp.com/send?phone=5585998022720&text=Oi%2C%20quero%20iniciar%20meu%20atendimento!"
+            >(85) 9.9802-2720</a>
           </div>
         </div>
     </div>
@@ -169,6 +178,8 @@
 i{
   color: #F05000;
 }
+
+
 
 .images{
   display: none;
@@ -615,6 +626,10 @@ i{
       margin: 20px 0;
       display: flex!important;
       justify-content: center;
+    }
+
+    .headline-hidden h4{
+      font-weight: 400!important;
     }
     
     .explain{

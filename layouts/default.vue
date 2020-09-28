@@ -48,6 +48,9 @@ body{
 a{
   text-decoration: none;
 }
+.white{
+  color: white;
+}
 .container{
   max-width: 1368px!important;
 }
