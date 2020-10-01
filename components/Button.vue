@@ -11,7 +11,7 @@
         props: {
             text: {
                 type: String,
-                required: true
+                default: 'Verifique grátis'
             },
             to: {
                 type: String,

@@ -1,64 +1,58 @@
 <template>
+  <nav>
+    <div class="nav__container">
+      <div class="toggle">
+        <div class="toggle-hamburger__container">
+          <input
+            id="toggle-hamburger-input"
+            @change="toggleActive()"
+            type="checkbox"
+            style="display: none;"
+          />
+          <label for="toggle-hamburger-input">
+            <div class="toggle-hamburger"></div>
+          </label>
+        </div>
+      </div>
+      <nuxt-link to="/" class="logo">
+        <img src="../assets/img/logo-creditti.png" alt="logo" />
+      </nuxt-link>
+      <div>
+        <ul ref="toggleControl" class="toggle-off">
+          <a href="#how-it-works" class="desktop">
+            <li>Como funciona?</li>
+          </a>
+          <a href="#how-it-works-mobile" class="mobile">
+            <li>Como funciona?</li>
+          </a>
+          <a href="#rights" class="desktop">
+            <li>Seus direitos</li>
+          </a>
+          <a href="#rights-mobile" class="mobile">
+            <li>Seus direitos</li>
+          </a>
 
-<nav>
-  <div class="nav__container">
-
-    <div class="toggle">  
-      <div class="toggle-hamburger__container">
-      <input id="toggle-hamburger-input" @change="toggleActive()" type="checkbox" style="display: none;">
-      <label for="toggle-hamburger-input">
-        <div class="toggle-hamburger"></div>
-      </label>
-    </div>
-  </div>
-    <nuxt-link to="/" class="logo">
-      <img 
-      src="../assets/img/logo-creditti.png" 
-      alt="logo">
-    </nuxt-link>
-    <div >
-      <ul ref="toggleControl"  class="toggle-off">
-        
-        <a href="#how-it-works" class="desktop">
-         <li> Como funciona?
-        </li>
-        </a>
-        <a href="#how-it-works-mobile" class="mobile">
-         <li> Como funciona?
-        </li>
-        </a>
-        <a href="#rights" class="desktop">
-          <li> Seus direitos
-         </li>
-         </a>
-        <a href="#rights-mobile" class="mobile">
-          <li> Seus direitos
-         </li>
-         </a>
-
-          <li class="bigger"> 
-            <Button :text='"Conte seu caso"' />
+          <li class="bigger">
+            <Button :text="'Conte seu caso'" />
           </li>
-
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-
-</nav>
+  </nav>
 </template>
 
 <script>
-    export default {
-        methods: {
-            toggleActive() {
-                this.$refs.toggleControl.classList.toggle("toggle-off")
-                this.$refs.toggleControl.classList.toggle("toggle-on")
-                if(this.$refs.toggleControl.classList.contains("toggle-off")){
-                this.$refs.toggleControl.classList.add("desactive")
-  }
-            }
-        },
+export default {
+  methods: {
+    toggleActive() {
+      this.$refs.toggleControl.classList.toggle("toggle-off");
+      this.$refs.toggleControl.classList.toggle("toggle-on");
+      if (this.$refs.toggleControl.classList.contains("toggle-off")) {
+        this.$refs.toggleControl.classList.add("desactive");
+      }
     }
+  }
+};
 </script>
 
 <style lang="css" scoped>
@@ -75,13 +69,13 @@ nav {
   align-items: center;
 }
 
-.mobile{
-      display: block;
-    }
+.mobile {
+  display: block;
+}
 
-    .desktop{
-      display: none;
-    }
+.desktop {
+  display: none;
+}
 
 .toggle {
   z-index: 15;
@@ -130,7 +124,7 @@ ul {
   align-items: center;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -146,25 +140,24 @@ ul a li {
 }
 
 ul a li:hover {
- filter: brightness(90%);
- color: #F05000;
+  filter: brightness(90%);
+  color: #f05000;
 }
 
-.toggle-hamburger__container{
-
+.toggle-hamburger__container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.toggle-hamburger{
+.toggle-hamburger {
   position: relative;
   width: 35px;
   height: 35px;
 }
 
-.toggle-hamburger:after{
-  content: '';
+.toggle-hamburger:after {
+  content: "";
   position: absolute;
   top: 20%;
   left: 5%;
@@ -175,8 +168,8 @@ ul a li:hover {
   transition: 1s ease;
 }
 
-.toggle-hamburger:before{
-  content: '';
+.toggle-hamburger:before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 25%;
@@ -187,13 +180,13 @@ ul a li:hover {
   transition: 1s ease;
 }
 
-#toggle-hamburger-input:checked ~ label .toggle-hamburger:after{
+#toggle-hamburger-input:checked ~ label .toggle-hamburger:after {
   transform: rotate(225deg);
   top: 45%;
   left: 5%;
 }
 
-#toggle-hamburger-input:checked ~ label .toggle-hamburger:before{
+#toggle-hamburger-input:checked ~ label .toggle-hamburger:before {
   top: 45%;
   left: 5%;
   width: 85%;
@@ -221,17 +214,17 @@ ul a li:hover {
 }
 
 @media screen and (min-width: 830px) {
-    .logo{
+  .logo {
     margin-left: 60px;
-    }
+  }
 
-    .mobile{
-      display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
-    .desktop{
-      display: block;
-    }
+  .desktop {
+    display: block;
+  }
 }
 @media screen and (max-width: 935px) {
   nav {
@@ -242,7 +235,6 @@ ul a li:hover {
   nav .logo {
     z-index: 20;
     position: absolute;
-   
   }
   nav .logo img {
     width: 120px;
@@ -288,7 +280,6 @@ ul a li:hover {
     border-bottom: 3px solid var(--light-color);
     box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.5);
     background: #176094;
-    
   }
 
   nav ul li {

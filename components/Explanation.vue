@@ -33,13 +33,13 @@
             isActive: false,
             number: 2,
             title: 'Limpamos seu nome',
-            description: 'Nossa equipe monta uma estratégia de negociação contra a empresa que te negativou para conseguir um acordo e limpar seu nome.'
+            description: 'Nossos parceiros montam uma estratégia de negociação contra a empresa que te negativou para limpar seu nome.'
         },
           {
             isActive: false,
             number: 3,
             title: 'Você é indenizado',
-            description: 'Você fica em casa, esperando o seu crédito ser liberado, e ainda pode receber uma indenização de mais de R$ 5.000,00. Só recebemos se você ganhar!'
+            description: 'Enviamos um documento para adquirir os direitos do seu caso, e, após assinar, você recebe até R$ 500,00 em 48 horas.'
         },
         ]
       }
