@@ -15,7 +15,6 @@
             },
             to: {
                 type: String,
-                required: true,
                 default: 'https://creditti.com.br/ajuda'
             },
         },

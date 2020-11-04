@@ -339,7 +339,19 @@
     <Footer />
   </div>
 </template>
-
+<script>
+export default {
+  head () {
+    return {
+      script: [{
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+        'data-ad-client': "ca-pub-6002240491",
+        async: true
+      }]
+    }
+  }
+}
+</script>
 <style lang="css" scoped>
 i {
   color: #f05000;
