@@ -17,7 +17,7 @@
           até <strong class="primary">R$ 500,00 em 48 horas após</strong> a confirmação dos nossos analistas
           financeiros.
         </p>
-        <Button class="button"  />
+        <Button :identify="'verifiqueOne'" class="button"  />
       </div>
       <div class="aside">
         <img
@@ -211,7 +211,7 @@
       <div class="title">
         <h2>Quer começar a limpar o seu nome?</h2>
       </div>
-      <Button class="button" />
+      <Button :identify="'verifiqueTwo'" class="button" />
     </div>
     <div id="rights" class="rights">
       <div class="headlines">

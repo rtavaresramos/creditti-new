@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-       <a :href="to" target="_blank">
+       <a :id="identify" :href="to" target="_blank">
             {{text}}
        </a>
     </div>
@@ -12,6 +12,10 @@
             text: {
                 type: String,
                 default: 'Verifique grátis'
+            },
+            identify: {
+                type: String,
+                default: ''
             },
             to: {
                 type: String,
