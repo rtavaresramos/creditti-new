@@ -37,8 +37,8 @@
         <img src="../assets/img/logo-creditti.png" alt="logo" />
       </nuxt-link>
     </div>
-    <div class="contact">
-      <h3>Creditti, CNPJ: 36.648.875/0001-41</h3>
+    <div>
+      <h3>Creditti, CNPJ: 39.540.004/0001-06</h3>
     </div>
     <div class="copy mt-3" style="text-align: center;">
       <cite

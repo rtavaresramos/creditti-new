@@ -19,7 +19,7 @@
             },
             to: {
                 type: String,
-                default: 'https://creditti.com.br/ajuda'
+                default: 'https://api.whatsapp.com/send?phone=5585998022720&text=Oi%2C%20quero%20iniciar%20meu%20atendimento!'
             },
         },
         
