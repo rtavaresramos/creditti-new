@@ -34,8 +34,9 @@ export default {
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
-  plugins: [
-  ],
+ plugins: [
+ '~/plugins/gtm',
+],
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
@@ -49,8 +50,12 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+ modules: [
+  '@nuxtjs/gtm',
+],
+gtm: {
+  id: 'GTM-5HQKHWX'
+},
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

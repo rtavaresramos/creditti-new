@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/gtm": "^2.4.0",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {}
